@@ -19,8 +19,8 @@
         </VBox>
         <VBox layoutX="264.0" layoutY="4.0">
             <children>
-                <Button mnemonicParsing="false" text="Btn" />
-                <Button mnemonicParsing="false" text="Button" />
+                <Button mnemonicParsing="false" text="Btn1" />
+                <Button mnemonicParsing="false" text="Btn2" />
             </children>
         </VBox>
         <VBox>
