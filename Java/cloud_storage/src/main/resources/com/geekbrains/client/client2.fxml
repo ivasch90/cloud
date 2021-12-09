@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="467.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.geekbrains.client.ChatController">
+    <MenuBar prefHeight="35.0" prefWidth="652.0" VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="Quit" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+        </Menu>
+    </MenuBar>
+    <GridPane>
+        <VBox>
+            <ListView fx:id="listViewClient" />
+            <TextField fx:id="input" alignment="TOP_LEFT" editable="false" onAction="#sendMsg" text="Path client" />
+        </VBox>
+        <VBox layoutX="264.0" layoutY="4.0">
+            <children>
+                <Button mnemonicParsing="false" text="Btn" />
+                <Button mnemonicParsing="false" text="Button" />
+            </children>
+        </VBox>
+        <VBox>
+            <ListView fx:id="listViewServer" prefHeight="430.0" prefWidth="248.0" />
+            <TextField alignment="TOP_RIGHT" editable="false" layoutY="4.0" text="Path server" />
+        </VBox>
+
+      <columnConstraints>
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+</VBox>
