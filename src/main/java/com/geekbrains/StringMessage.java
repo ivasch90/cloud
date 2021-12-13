@@ -9,10 +9,13 @@ import java.time.LocalDateTime;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-@AllArgsConstructor
 public class StringMessage extends AbstractMessage {
 
     private String content;
     private LocalDateTime time;
 
+    public StringMessage(String content) {
+        this.content = content;
+    }
 }
+

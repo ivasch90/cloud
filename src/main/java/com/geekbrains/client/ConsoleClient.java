@@ -12,7 +12,7 @@ public class ConsoleClient {
         Scanner in = new Scanner(System.in);
         while (in.hasNextLine()) {
             String msg = in.nextLine();
-            net.sendMessage(new StringMessage(msg, LocalDateTime.now()));
+            //net.sendMessage(new StringMessage(msg, LocalDateTime.now()));
         }
     }
 }
