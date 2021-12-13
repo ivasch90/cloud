@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="363.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.geekbrains.client.ClientAppController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Файл">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Инфо">
+          <items>
+            <MenuItem mnemonicParsing="false" text="О программе" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <ListView fx:id="listViewServerPath" layoutX="14.0" layoutY="45.0" prefHeight="262.0" prefWidth="200.0" />
+            <Button layoutX="225.0" layoutY="52.0" mnemonicParsing="false" text="создать папку" />
+            <Button fx:id="btnUpdate" layoutX="225.0" layoutY="213.0" mnemonicParsing="false" text="Обновить" onAction="#btnUpdateListFiles" />
+            <Button layoutX="225.0" layoutY="90.0" mnemonicParsing="false" text="удалить" />
+            <Button layoutX="225.0" layoutY="124.0" mnemonicParsing="false" text="загрузить" />
+            <Button layoutX="225.0" layoutY="161.0" mnemonicParsing="false" text="переименовать" />
+            <Button fx:id="btnExit" layoutX="225.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnActionExit" text="выйти" />
+            <TextField fx:id="textFieldPath" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="200.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
