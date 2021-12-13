@@ -19,6 +19,7 @@ public class NettyNet {
     private SocketChannel channel;
     private final OnMessageReceived callback;
 
+
     public NettyNet (OnMessageReceived callback) {
         this.callback = callback;
         new Thread( () -> {

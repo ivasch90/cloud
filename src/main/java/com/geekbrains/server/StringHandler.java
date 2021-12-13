@@ -17,6 +17,7 @@ public class StringHandler extends SimpleChannelInboundHandler<String> {
         log.debug("Client connected...");
     }
 
+
     @Override
     protected void channelRead0(ChannelHandlerContext cht, String s) throws Exception {
         log.debug("Received: {}", s);

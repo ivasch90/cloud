@@ -13,6 +13,7 @@ public class ConsoleClient {
         while (in.hasNextLine()) {
             String msg = in.nextLine();
             net.sendMessage(new StringMessage(msg, LocalDateTime.now()));
+
         }
     }
 }

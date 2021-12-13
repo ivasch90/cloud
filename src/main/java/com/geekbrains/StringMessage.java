@@ -15,4 +15,5 @@ public class StringMessage extends AbstractMessage {
     private String content;
     private LocalDateTime time;
 
+
 }

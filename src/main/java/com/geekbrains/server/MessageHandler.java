@@ -12,6 +12,7 @@ public class MessageHandler extends SimpleChannelInboundHandler<AbstractMessage>
     protected void channelRead0(ChannelHandlerContext ctx, AbstractMessage abstractMessage) throws Exception {
 
 
+
         log.debug("Received: {}", abstractMessage);
         ctx.writeAndFlush(abstractMessage);
 
