@@ -1,0 +1,6 @@
+ru/gb/model/Cat.class
+ru/gb/servlet/CatServlet.class
+ru/gb/servlet/BasicServlet.class
+ru/gb/servlet/TestHttpServlet.class
+ru/gb/servlet/ProductHttpServlet.class
+ru/gb/model/Product.class
